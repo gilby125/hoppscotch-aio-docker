@@ -12,7 +12,7 @@ services:
       hoppscotch-db:
         condition: service_healthy # Ensures database is ready before starting the app
     ports:
-      - "3066:3066" # Frontend/UI
+      - "3066:3000" # Frontend/UI
       - "3100:3100" # Admin Panel
       - "3170:3170" # Backend API
     command: >
